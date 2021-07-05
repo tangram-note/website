@@ -1,0 +1,25 @@
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color:#333;
+}
+
+/* visited link */
+a:visited {
+  color: #333;
+}
+
+/* mouse over link */
+a:hover {
+  color: #333;
+}
+
+/* selected link */
+a:active {
+  color: #333;
+}
