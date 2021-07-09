@@ -4,7 +4,8 @@ import styled from 'styled-components';
 import BackgroundImage from 'gatsby-background-image'
 import { StaticImage } from "gatsby-plugin-image"
 
-import { Section, SectionTitle, SectionDescription, SectionItemDescription, SectionItemImage, FlexContainer, FlexItem, SectionItemTitle } from './common';
+import { Section, SectionTitle, SectionDescription, SectionItemDescription, SectionItemImage, FlexContainer, FlexItem, SectionItemTitle, ImageShadow } from './common';
+import { Footer } from './footer';
 
 const Container = styled.div`
   height: 300px;
@@ -45,9 +46,16 @@ export const Introduce = (props) => {
     <Container>
       <Section>
         <div className="title">不仅仅是一款笔记本软件</div>
-        <div className="subtitle">Tangram 是一款知识管理软件，提供一整套信息工具箱，帮助你打通信息孤岛，管理碎片化信息，以及最重要的构建你的知识体系。</div>
+        <div className="subtitle">Tangram Note是一款知识管理软件，提供一整套信息工具箱，帮助你打通信息孤岛，管理碎片化信息，以及最重要的构建你的知识体系。</div>
         <SectionImageHolder>
-          <StaticImage src="../images/tangram.png" alt="Tangram Interface" style={{ width: 900 }}/>
+          <ImageShadow style={{ width: 900, margin: '0 auto', position: 'relative' }}>
+            <div style={{ borderRadius: 10, overflow: 'hidden' }}>
+              <StaticImage src="../images/screenshot-daily.png" alt="Tangram Interface" style={{ width: 900 }}/>
+            </div>
+            <div style={{ position: 'absolute', right: -90, zIndex: -1, top: 200 }}>
+              <StaticImage src="../images/fox-head.png" alt="Hello, I am Tangram Note" style={{ width: 150 }}/>
+            </div>
+          </ImageShadow>
         </SectionImageHolder>
       </Section>
       <Section grey>
@@ -174,10 +182,7 @@ export const Introduce = (props) => {
           </FlexItem>
         </FlexContainer>
       </Section>
-      <Section grey style={{ textAlign: 'center' }}>
-        <StaticImage src="../images/grey-fox.png" alt="tangram" style={{ width: 46, height: 50 }}/>
-        <p>@2021 Tangram Note</p>
-      </Section>
+      <Footer />
     </Container>
   )
 }

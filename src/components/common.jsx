@@ -68,3 +68,9 @@ export const FlexContainer = styled.div`
 export const FlexItem = styled.div`
   width: 500px;
 `;
+
+export const ImageShadow = styled.div`
+  box-shadow: 0 10px 40px -5px rgb(0 0 0 / 20%), 0 10px 10px -5px rgb(0 0 0 / 10%);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+`;

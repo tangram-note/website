@@ -1,6 +1,6 @@
-import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
 import styled from 'styled-components';
+import Brand from './brand';
 
 
 
@@ -10,10 +10,6 @@ const HeaderContainer = styled.header`
   justify-content: space-between;
   padding: 10px;
   border-bottom: 1px solid #ececec;
-  .logo {
-    width: 100px;
-    line-height: 30px;
-  }
 `;
 
 const Navigatioin = styled.nav`
@@ -35,10 +31,7 @@ const Navigatioin = styled.nav`
 export const Header = (props) => {
   return (
     <HeaderContainer id='header'>
-      <div className="logo">
-        <StaticImage src="../images/logo-icon.png" width={30} height={30} style={{ marginRight: 5 }}/>
-        Tangram
-      </div>
+      <Brand />
       <Navigatioin className="navigation">
         <ul className='navbar-nav'>
           <li>
@@ -49,26 +42,6 @@ export const Header = (props) => {
           <li>
             <a href='#about' className='page-scroll'>
               About
-            </a>
-          </li>
-          <li>
-            <a href='#services' className='page-scroll'>
-              Services
-            </a>
-          </li>
-          <li>
-            <a href='#portfolio' className='page-scroll'>
-              Gallery
-            </a>
-          </li>
-          <li>
-            <a href='#testimonials' className='page-scroll'>
-              Testimonials
-            </a>
-          </li>
-          <li>
-            <a href='#team' className='page-scroll'>
-              Team
             </a>
           </li>
           <li>
