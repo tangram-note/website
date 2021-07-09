@@ -36,7 +36,7 @@ export const Header = (props) => {
   return (
     <HeaderContainer id='header'>
       <div className="logo">
-        <StaticImage src="../images/icon.png" width={30} height={30} style={{ marginRight: 5 }}/>
+        <StaticImage src="../images/logo-icon.png" width={30} height={30} style={{ marginRight: 5 }}/>
         Tangram
       </div>
       <Navigatioin className="navigation">
