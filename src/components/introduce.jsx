@@ -5,10 +5,8 @@ import BackgroundImage from 'gatsby-background-image'
 import { StaticImage } from "gatsby-plugin-image"
 
 import { Section, SectionTitle, SectionDescription, SectionItemDescription, SectionItemImage, FlexContainer, FlexItem, SectionItemTitle, ImageShadow } from './common';
-import { Footer } from './footer';
 
 const Container = styled.div`
-  height: 300px;
   width: 100%;
   padding-top: 50px;
   .title {
@@ -182,7 +180,6 @@ export const Introduce = (props) => {
           </FlexItem>
         </FlexContainer>
       </Section>
-      <Footer />
     </Container>
   )
 }

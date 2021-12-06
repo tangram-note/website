@@ -31,9 +31,8 @@ export const Footer = (props) => {
             </div>
             <ul>
               <li>关于</li>
-              <li>媒体素材</li>
-              <li>隐私声明</li>
-              <li>使用条款</li>
+              <li><a href="./privacy">隐私声明</a></li>
+              <li><a href="./terms">使用条款</a></li>
             </ul>
           </FlexItem>
           <FlexItem style={{ width: 250 }}>

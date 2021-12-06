@@ -22,7 +22,14 @@ module.exports = {
     },
     "gatsby-transformer-remark",
     "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        defaults: {
+          placeholder: 'none',
+        }
+      }
+    },
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",

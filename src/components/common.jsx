@@ -74,3 +74,11 @@ export const ImageShadow = styled.div`
   border: 1px solid #ccc;
   border-radius: 10px;
 `;
+
+
+export const PageContainer = styled.main`
+  font-family: -apple-system, Roboto, sans-serif, serif;
+  margin: 10px auto;
+  padding: 20px;
+  max-width: 960px;
+`;
